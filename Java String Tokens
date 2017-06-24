@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine();
+        // Write your code here.
+        String[] split = s.replaceFirst("^\\W+", "").split("[\\s!,?._'@]+");
+        System.out.println(split.length);
+        for(String string : split){
+            System.out.println(string);
+        }
+        scan.close();
+    }
+}
